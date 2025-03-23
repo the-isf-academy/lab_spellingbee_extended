@@ -16,5 +16,8 @@ class TerminalView:
 
     def correct(self):
         print("\n  -correct!-  ")
+
+    def already_guessed(self):
+        print("\n  -you've already guessed this word...-  ")
             
     ### 💻 Finish writing the required methods 

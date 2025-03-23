@@ -20,8 +20,12 @@ while game_play == True:
     # user guesses a word
     user_guess = terminal_view.get_guess()
 
-    #check for keyletter
-    if spelling_bee.check_guess(user_guess) == True:
+    #check if guess is correct
+    if spelling_bee.check_already_guessed(user_guess) == True:
+        terminal_view.already_guessed()
+
+    #check if guess is correct
+    elif spelling_bee.check_guess(user_guess) == True:
         terminal_view.correct()
 
     ### 💻 Finish the game logic
